@@ -1,0 +1,118 @@
+/* General */
+  * {
+    font-family: arial;
+  }
+  html, body, #root, #container {
+    height: 100%;
+    margin: 0;
+  }
+  #container {
+    overflow: hidden;
+    display: flex;
+  }
+/* Components */
+  /* Activity Bar Section */
+    #activity-bar-section {
+      background: #333333;
+      display: flex;
+      flex-direction: column;
+    }
+    .activity {
+      font-size: 25px;
+      color: #adadad;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      background: inherit;
+      border: none;
+      cursor: pointer;
+      border-left: 3px solid transparent;
+    }
+    .activity:hover, .activity.active {
+      color: white;
+    }
+    .activity.active {
+      border-left: 3px solid white;
+    }
+  /* Sidebar Section */
+    #sidebar-section {
+      height: 100%;
+      overflow: auto;
+      width: 370px;
+      padding: 10px;
+    }
+    .sidebar-content {
+      display: none;
+    }
+    .sidebar-content.active {
+      display: block;
+    }
+    /* Side Bar Section Components */
+      /* Directory Selector */
+        #current-folder-directory {
+          word-wrap: break-word;
+        }
+        #button-section {
+          border: black;
+          display: flex;
+          flex-direction: row;
+        }
+      /* File Explorer */
+        /* Top part (search and sorting) */
+          .sort-option {
+            padding-top: 10px;
+          }
+          .sort-selector {
+            margin-left: 5px;
+          }
+        /* Bottom part (contents) */
+          .clickable {
+            cursor: pointer;
+          }
+          .icon-row {
+            width: 2em;
+            text-align: center;
+          }
+          .icon-folder {
+            width: 1em;
+          }
+          .icon-file {
+            width: 0.75em;
+          }
+          .selected {
+            background-color: lightsalmon;
+          }
+      /* Table of Contents */
+        #list-area {
+          padding: 0;
+        }
+        ol {
+          counter-reset: item;
+        }
+        li {
+          display: block;
+        }
+        li:before {
+          content: counters(item, '.') '. ';
+          counter-increment: item;
+          font-weight: bold;
+        }
+        .clickable-record {
+          text-decoration: underline;
+        }
+  /* Section Divider */
+    #section-divider {
+      background-color: black;
+      width: 10px;
+      height: 100%;
+      cursor: ew-resize;
+    }
+  /* Page Section */
+    #page-section {
+      flex: 1 1 auto;
+    }
+    #page-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
