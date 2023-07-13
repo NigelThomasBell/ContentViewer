@@ -3,7 +3,7 @@ import SidebarSection from './components/SidebarSection';
 import SectionDivider from './components/SectionDivider';
 import PageSection from './components/PageSection';
 
-const App = () => {
+function App(): JSX.Element {
   return (
     <div id="container" className="App">
       <ActivityBarSection />
@@ -12,6 +12,6 @@ const App = () => {
       <PageSection />
     </div>
   );
-};
+}
 
 export default App;
