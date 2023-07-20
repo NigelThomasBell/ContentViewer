@@ -93,6 +93,15 @@
 * A Content-Security-Policy (CSP) has not been added within the head of `public/index.html` because ContentViewer uses inline scripting.
 
 ## Project History
+### evo3 - 14/07/23
+* Integrated TypeScript. Required tweaks to the original JavaScript code in order to comply and function with TypeScript.
+* Improved variable names.
+* Added further comments.
+* Added custom application icon. This only shows up after building and installing the application, not during dev mode.
+* Sizes: 
+    * Installer size: 66.5 MB.
+    * Installed project size : 233 MB.
+
 ### evo2 - 30/04/23
 * Updated all packages.
 * Replaced the project scaffolder with electron-vite.

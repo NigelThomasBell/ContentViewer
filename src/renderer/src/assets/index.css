@@ -13,7 +13,7 @@
 /* Components */
   /* Activity Bar Section */
     #activity-bar-section {
-      background: #333333;
+      background: black;
       display: flex;
       flex-direction: column;
     }
@@ -49,7 +49,7 @@
     }
     /* Side Bar Section Components */
       /* Directory Selector */
-        #current-folder-directory {
+        #current-directory-heading {
           word-wrap: break-word;
         }
         #button-section {
@@ -79,8 +79,9 @@
           .icon-file {
             width: 0.75em;
           }
-          .selected {
-            background-color: lightsalmon;
+          .selected, tr.selected td{
+            background-color: black;
+            color: white;
           }
       /* Table of Contents */
         #list-area {

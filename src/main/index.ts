@@ -4,7 +4,7 @@ import { electronApp, optimizer, is } from '@electron-toolkit/utils';
 import icon from '../../resources/icon.png?asset';
 require('@electron/remote/main').initialize();
 
-const createWindow = () => {
+function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
@@ -18,7 +18,7 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
       webSecurity: false,
-      devTools: false
+      devTools: true
     }
   });
   require('@electron/remote/main').enable(mainWindow.webContents);
@@ -39,7 +39,7 @@ const createWindow = () => {
   } else {
     mainWindow.loadFile(join(__dirname, '../renderer/index.html'));
   }
-};
+}
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
