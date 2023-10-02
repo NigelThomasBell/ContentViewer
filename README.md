@@ -48,7 +48,7 @@
 * It is recommended to use yarn if possible, because it is faster (since it installs the packages in parallel instead of sequentially) and more secure (since it verifies the packages with a checksum instead of using SHA-512 from `package-lock.json`).
 
 ## Requirements and installation
-* ContentViewer was made using Node, React, Electron, Vite, Bootstrap and FontAwesome.
+* ContentViewer was made using Node, React, Electron, Vite, Bootstrap, SCSS and FontAwesome.
 * Several node modules are required for ContentViewer. These include:
     * Several modules already provided after running:
         ```
@@ -61,6 +61,10 @@
     * Bootstrap (install the latest stable version):
         ```
         yarn add bootstrap@next
+        ```
+    * SCSS
+        ```
+        yarn add sass
         ```
     * Font Awesome
         ```
@@ -93,6 +97,12 @@
 * A Content-Security-Policy (CSP) has not been added within the head of `public/index.html` because ContentViewer uses inline scripting.
 
 ## Project History
+### evo3 phase 2 - 02/10/23
+* Integrated SCSS to streamline the CSS styling.  
+* Sizes: 
+    * Installer size: 67.0 MB.
+    * Installed project size: 238 MB.
+
 ### evo3 - 14/07/23
 * Integrated TypeScript. Required tweaks to the original JavaScript code in order to comply and function with TypeScript.
 * Improved variable names.
@@ -100,7 +110,7 @@
 * Added custom application icon. This only shows up after building and installing the application, not during dev mode.
 * Sizes: 
     * Installer size: 66.5 MB.
-    * Installed project size : 233 MB.
+    * Installed project size: 233 MB.
 
 ### evo2 - 30/04/23
 * Updated all packages.
@@ -113,10 +123,10 @@
 * Implemented code linting via ESLint with Prettier.
 * Sizes (pre Table Of Contents): 
     * Installer size: 66.1 MB.
-    * Installed project size : 228 MB.
+    * Installed project size: 228 MB.
 * Sizes (post Table Of Contents): 
     * Installer size: 68.8 MB.
-    * Installed project size : 245 MB.
+    * Installed project size: 245 MB.
 
 ### evo1 - 30/12/22
 * Used create-react-app as the baseline React project scaffolder.
