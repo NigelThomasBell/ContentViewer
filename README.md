@@ -1,4 +1,5 @@
 # ContentViewer
+![ContentViewer Project Image](/_readme_images/ContentViewer.png "ContentViewer Project Image")
 ## Project description and features
 * ContentViewer is a file viewer that allows the user to easily:
     * Navigate the local folders.
